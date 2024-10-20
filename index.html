@@ -103,8 +103,8 @@
 <body>
     <div class="blurred-bg"></div>
     <div class="container">
-        <video id="myVideo" controls autoplay loop muted>
-            <source src="myvideo.mp4" type="video/mp4" autoplay="0" muted>
+        <video id="myVideo">
+            <source src="myvideo.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
 
@@ -129,10 +129,6 @@
         const video = document.getElementById('myVideo');
 
         playVideo();
-        if(video.paused)
-        {
-            window.location.href = "b.html";
-        }
         setTimeout(() => {window.location.href = "b.html"}, 20000); // Delay of 1000 milliseconds (1 second)
         
     }
